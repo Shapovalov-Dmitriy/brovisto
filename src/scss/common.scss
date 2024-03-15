@@ -1,1 +1,13 @@
 // Заголовки, общие БЄМ блоки и проче...
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.title {
+    color: $mainColor;
+    @include adaptiveValue("font-size", 48, 32);
+    font-family: Gilroy;
+    font-weight: 300;
+    line-height: 1.1;
+}

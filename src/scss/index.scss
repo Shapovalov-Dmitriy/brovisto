@@ -1,0 +1,83 @@
+//====================================================================================================
+.hero {
+    padding: 60px 0;
+    // .hero__wrapper
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        @media (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .hero__heading
+
+    &__heading {
+    }
+
+    // .hero__title
+
+    &__title {
+        @include adaptiveValue("font-size", 56, 32);
+        max-width: rem(576);
+        span {
+            font-weight: 800;
+        }
+    }
+
+    // .hero__descr
+
+    &__descr {
+        justify-self: end;
+        padding-top: rem(15);
+        @media (max-width: $tablet) {
+            justify-self: start;
+        }
+    }
+
+    // .hero__descr-text
+
+    &__descr-text {
+        @include adaptiveValue("font-size", 21, 18, 768, 320, 1);
+        font-weight: 600;
+        max-width: rem(430);
+        margin-bottom: em(14);
+    }
+}
+
+.buttons {
+    display: flex;
+    column-gap: rem(28);
+    row-gap: rem(20);
+    @media (max-width: $mobileSmall) {
+        flex-direction: column;
+        display: inline-flex;
+    }
+    // .buttons__link-sign-up
+
+    &__link {
+        padding: rem(25) rem(57);
+        font-size: rem(12);
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: $textColor;
+        }
+        &_sign-up {
+            color: $whiteColor;
+            background-color: $accentColor;
+        }
+        &_price {
+            box-shadow: inset 0 0 0 2px $textColor;
+            &:hover {
+                color: $whiteColor;
+            }
+        }
+    }
+}
+
+//====================================================================================================

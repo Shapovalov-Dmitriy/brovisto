@@ -56,6 +56,7 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
+    color: #5e5e5e;
     font-weight: 400;
     background-color: $bgSiteColor;
     // Скролл заблокирован
@@ -141,4 +142,4 @@ body {
 @import "footer";
 
 // Подключение стилей отдельных страниц
-@import "home";
+@import "index";
