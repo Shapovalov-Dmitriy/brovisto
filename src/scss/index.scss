@@ -1,6 +1,6 @@
 //====================================================================================================
 .hero {
-    padding: 60px 0;
+    padding: 3vh 0;
     // .hero__wrapper
 
     &__wrapper {
@@ -10,11 +10,6 @@
         @media (max-width: $tablet) {
             grid-template-columns: 1fr;
         }
-    }
-
-    // .hero__heading
-
-    &__heading {
     }
 
     // .hero__title
@@ -33,6 +28,7 @@
         justify-self: end;
         padding-top: rem(15);
         @media (max-width: $tablet) {
+            padding-top: rem(0);
             justify-self: start;
         }
     }
