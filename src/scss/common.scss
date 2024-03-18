@@ -10,4 +10,11 @@
     font-family: Gilroy;
     font-weight: 300;
     line-height: 1.1;
+    &__services {
+        margin-bottom: rem(30);
+    }
+}
+
+.padding-0 {
+    padding: 0;
 }

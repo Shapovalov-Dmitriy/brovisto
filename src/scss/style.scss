@@ -59,6 +59,7 @@ body {
     color: #5e5e5e;
     font-weight: 400;
     background-color: $bgSiteColor;
+    line-height: 1.4;
     // Скролл заблокирован
     .lock & {
         overflow: hidden;
@@ -144,3 +145,4 @@ body {
 // Подключение стилей отдельных страниц
 @import "index";
 @import "advantages";
+@import "service";
