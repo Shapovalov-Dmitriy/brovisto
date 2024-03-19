@@ -13,6 +13,9 @@
     &__services {
         margin-bottom: rem(30);
     }
+    &__works {
+        @include adaptiveValue("margin-bottom", 64, 25);
+    }
 }
 
 .padding-0 {
