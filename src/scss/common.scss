@@ -6,7 +6,7 @@
 
 .title {
     color: $mainColor;
-    @include adaptiveValue("font-size", 48, 32);
+    @include adaptiveValue("font-size", 48, 30);
     font-family: Gilroy;
     font-weight: 300;
     line-height: 1.1;
@@ -16,11 +16,12 @@
     &__works {
         @include adaptiveValue("margin-bottom", 64, 25);
     }
+    &__sale {
+        max-width: rem(786);
+        margin-bottom: rem(20);
+    }
 }
 
 .padding-0 {
     padding: 0;
-}
-.mb-40 {
-    margin-bottom: rem(40);
 }

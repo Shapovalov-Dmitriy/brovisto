@@ -1,0 +1,97 @@
+.sale {
+    padding: 6vh 0;
+    background-color: $bgColor;
+    &__container {
+        position: relative;
+    }
+    // .sale__content
+
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+
+    // .sale__text
+
+    &__text {
+        @include adaptiveValue("font-size", 21, 16);
+        max-width: rem(580);
+        margin-bottom: rem(40);
+    }
+
+    // .sale__form
+
+    &__img {
+        position: absolute;
+        bottom: -14%;
+        right: 8%;
+        z-index: 1;
+        @media (max-width: $mobile) {
+            bottom: -11%;
+        }
+    }
+}
+
+.form {
+    // .form__wrapper
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+        margin-bottom: rem(20);
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+
+    // .form__input
+
+    &__input,
+    &__btn {
+        max-width: rem(280);
+        width: 100%;
+        height: rem(60);
+    }
+    &__input {
+        padding: rem(20);
+        &::placeholder {
+            font-size: rem(14);
+            font-weight: 400;
+            color: #a3a3a3;
+            text-transform: uppercase;
+        }
+    }
+    // .form__btn
+
+    &__btn {
+        background-color: $accentColor;
+        font-size: rem(14);
+        font-weight: 600;
+        color: $whiteColor;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .form__check-label
+    &__check-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: rem(10);
+    }
+
+    &__checkbox {
+        border-color: transparent;
+    }
+
+    &__check-label {
+        display: inline-block;
+        max-width: rem(454);
+        font-size: rem(12);
+        color: #acacac;
+    }
+}
+.test {
+    padding-bottom: 1000px;
+}

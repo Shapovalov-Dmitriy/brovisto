@@ -254,30 +254,66 @@
 			<section class="works">
 				<div class="works__container">
 					<h2 class="title title__works">Профессиональный подход</h2>
+
 					<div class="works__items">
-						<div class="works__item works__item_1 works__image-ibg">
+						<div class="works__item works__image-ibg">
 							<img src="img/works/bg-img1.jpg" alt="" width="280" height="280">
 						</div>
-						<div class="works__item works__item_2 works__image-ibg">
+						<div class="works__item works__image-ibg">
 							<img src="img/works/bg-img2.jpg" alt="" width="280" height="280">
 						</div>
-						<div class="works__item works__item_3 works__image-ibg">
+						<div class="works__item works__image-ibg">
 							<img src="img/works/bg-img3.jpg" alt="" width="580" height="580">
 						</div>
-						<div class="works__item works__item_4 works__image-ibg">
+						<div class="works__item works__image-ibg">
 							<img src="img/works/bg-img4.jpg" alt="" width="580" height="580">
 						</div>
-						<div class="works__item works__item_5 works__image-ibg">
+						<div class="works__item works__image-ibg">
 							<img src="img/works/bg-img5.jpg" alt="" width="280" height="280">
 						</div>
-						<div class="works__item works__item_6 works__image-ibg">
+						<div class="works__item works__image-ibg">
 							<img src="img/works/bg-img6.jpg" alt="" width="280" height="280">
 						</div>
 					</div>
+					<!-- /.works__items -->
 				</div>
 				<!-- /.works__container -->
 			</section>
 			<!-- /.works -->
+			<section class="sale">
+				<div class="sale__container">
+					<div class="sale__content">
+						<h2 class="title title__sale">Оставьте заявку и <strong>получите скидку 15%</strong> на первую процедуру
+						</h2>
+						<p class="sale__text">Введите ваши контактные данные ниже, и наш менеджер свяжется с вами и закрепит скидку
+						</p>
+						<form class="sale__form form" action="POST">
+							<div class="form__wrapper">
+								<input class="form__input" type="tel" placeholder="Введите ваш телефон" required>
+								<button class="form__btn" type="submit">закрепить скидку 15%</button>
+							</div>
+							<div class="form__check-wrapper">
+								<input class="form__checkbox" type="checkbox" name="policy" id="policy" required>
+								<label for="policy" class="form__check-label">
+									Нажимая кнопку, соглашаюсь на передачу персональных данных согласно
+									<a href="#">политике конфиденциальности</a>
+								</label>
+							</div>
+						</form>
+					</div>
+					<!-- /.sale__content -->
+					<img class="sale__img" src="img/sale/sharik.png" alt="" width="233" height="346">
+				</div>
+				<!-- /.sale__container -->
+			</section>
+			<!-- /.sale -->
+			<section class="test">
+				<div class="test__container">
+
+				</div>
+				<!-- /.test__container -->
+			</section>
+			<!-- /.test -->
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>
