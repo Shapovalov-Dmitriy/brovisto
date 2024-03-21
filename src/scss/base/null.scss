@@ -8,6 +8,9 @@
 *:after {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 :focus,
 :active {
     // outline: none;

@@ -90,8 +90,8 @@
         max-width: rem(454);
         font-size: rem(12);
         color: #acacac;
+        a {
+            text-decoration: underline;
+        }
     }
-}
-.test {
-    padding-bottom: 1000px;
 }
