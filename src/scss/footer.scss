@@ -1,3 +1,54 @@
 //====================================================================================================
+.footer {
+    padding: 10vh 0;
+    // footer__wrapper
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: rem(20);
+            justify-items: center;
+        }
+    }
+
+    &__logo-descr {
+        font-size: rem(11);
+    }
+
+    &__social {
+        justify-self: center;
+    }
+
+    &__social-descr {
+        font-size: rem(14);
+        margin-bottom: rem(10);
+    }
+
+    &__policy {
+        justify-self: end;
+        font-size: rem(14);
+        @media (max-width: $mobile) {
+            justify-self: center;
+        }
+        &:hover {
+            color: $accentColor;
+        }
+    }
+}
+.social.footer__social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    svg {
+        width: 35px;
+        height: 35px;
+    }
+}
 
 //====================================================================================================

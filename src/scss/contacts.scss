@@ -1,0 +1,121 @@
+.contacts {
+    padding: 6vh 0;
+    background-color: #d9d9d9;
+
+    // .contacts__wrapper
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: auto;
+        gap: rem(20);
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .contacts__body
+
+    &__body {
+        background-color: $whiteColor;
+        padding: rem(40);
+        max-width: rem(373);
+        @media (max-width: $mobile) {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 rem(-15);
+            margin: 0 auto;
+            padding: rem(30);
+        }
+    }
+
+    // .contacts__box
+
+    &__box {
+        margin-bottom: rem(20);
+        @media (max-width: $mobile) {
+            flex: 1 1 50%;
+            padding: 0 rem(15);
+        }
+
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 100%;
+        }
+    }
+
+    // .contacts__map
+
+    &__map {
+        iframe {
+            width: 100%;
+            height: 100%;
+            @media (max-width: $mobile) {
+                min-height: rem(400);
+            }
+        }
+    }
+}
+
+.box {
+    // .box__title
+
+    &__title {
+        font-size: rem(14);
+        margin-bottom: rem(6);
+    }
+
+    // .box__address
+
+    &__address,
+    &__phone,
+    &__work {
+        font-size: rem(14);
+        padding-left: rem(31);
+        max-width: rem(251);
+    }
+    &__address {
+        background: url("../img/contacts/location.svg") left top no-repeat;
+    }
+
+    &__phone {
+        background: url("../img/contacts/phone.svg") left top no-repeat;
+        transition: color 0.3s;
+        &:hover {
+            color: $accentColor;
+        }
+    }
+
+    &__work {
+        background: url("../img/contacts/clock.svg") left top no-repeat;
+    }
+}
+.social {
+    // .social__item
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+
+    &__item {
+        width: rem(20);
+        height: rem(20);
+        border-radius: 50%;
+        &:hover circle {
+            fill: $accentColor;
+        }
+        svg {
+            circle {
+                fill: #979797;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+.buttons {
+    // .buttons__link
+    &__link {
+        display: inline-block;
+        margin-top: rem(20);
+        // .buttons__link_sign-up
+    }
+}
